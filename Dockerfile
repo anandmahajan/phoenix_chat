@@ -1,8 +1,8 @@
 FROM trenpixster/elixir
 
-MAINTAINER Vladimir Reshetnikov <zepplock@vova.org>
+MAINTAINER Anand Mahajan <anand@sphinx-solution.com>
 
-ENV BUILD_DATE 2016-11-16
+ENV BUILD_DATE 2020-05-16
 
 
 #uncomment this if you use Postgres
