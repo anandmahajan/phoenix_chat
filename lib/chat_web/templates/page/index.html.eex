@@ -1,0 +1,23 @@
+<section class="phx-hero">
+  <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
+  <p>A productive web framework that<br/>does not compromise speed or maintainability.</p>
+</section>
+
+<section class="row">
+  <button id='as'>Leave Channel</button>
+  <article >
+  <ul id='msg-list' style='list-style: none; min-height:200px; padding: 10px;'></ul>
+		<div class="row">
+		<div class="col-xs-9">
+		<input type="text" id="room_id" class="form-control" placeholder="Your Room">
+		</div>
+		<div class="col-xs-3">
+		<input type="text" id="name" class="form-control" placeholder="Your Name" autofocus>
+		</div>
+		<div class="col-xs-9">
+		<input type="text" id="msg" class="form-control" placeholder="Your Message">
+		</div>
+		</div>
+	</article>
+		 <ul id='user-list' style='list-style: none; min-height:200px; padding: 10px;'></ul>
+	</section>
