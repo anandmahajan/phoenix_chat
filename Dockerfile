@@ -1,8 +1,8 @@
 FROM trenpixster/elixir
 
-MAINTAINER Anand Mahajan <anand@sphinx-solution.com>
+MAINTAINER Vladimir Reshetnikov <zepplock@vova.org>
 
-ENV BUILD_DATE 2020-05-16
+ENV BUILD_DATE 2016-11-16
 
 
 #uncomment this if you use Postgres
@@ -12,8 +12,8 @@ ENV BUILD_DATE 2020-05-16
 #    apt-get install -y --force-yes postgresql-client-9.3
 
 ENV MIX_ENV prod
-ENV PORT 4001
-EXPOSE 4001
+ENV PORT 4000
+EXPOSE 4000
 
 RUN mkdir /app
 ADD . /app
