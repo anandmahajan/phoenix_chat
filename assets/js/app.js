@@ -40,7 +40,7 @@ function chatQuestionFun() {
   window.localStorage.setItem('name', "");
   $.ajax({
     type: "GET",
-    url: "http://192.168.43.238:8096/api/chat/" + localRoom.value,
+    url: "https://apps.webmaxy.com/api/chat/" + localRoom.value,
     data: {
       wvid: wvid.value,
     },
@@ -290,7 +290,7 @@ if (typeof file_wmx !== undefined && file_wmx !== null) {
 const setUserDetail = function (msg, callback) {
   $.ajax({
     type: "POST",
-    url: "http://192.168.43.238:8096/api/user",
+    url: "https://apps.webmaxy.com/api/user",
     data: {
       type: serverMsgType,
       value: msg,
@@ -351,7 +351,7 @@ const userStopsTyping = function () {
 const sendPush = function (msg) {
   $.ajax({
     type: "POST",
-    url: "http://192.168.43.238:8096/api/send-push",
+    url: "https://apps.webmaxy.com/api/send-push",
     data: {
       msg: msg,
       wvid: wvid.value,
