@@ -81,8 +81,8 @@ RUN wget -q https://github.com/elixir-lang/elixir/releases/download/v1.10.3/Prec
     ln -s /elixir/bin/iex /usr/local/bin/iex
 
 # Install local Elixir hex and rebar
-RUN /usr/local/bin/mix local.hex --force && \
-    /usr/local/bin/mix local.rebar --force
+#RUN /usr/local/bin/mix local.hex --force && \
+#    /usr/local/bin/mix local.rebar --force
 
 WORKDIR /
 
@@ -95,12 +95,12 @@ ADD . /app
 
 WORKDIR /app
 
-RUN mix local.rebar --force
-RUN mix local.hex --force
+#RUN mix local.rebar --force
+#RUN mix local.hex --force
 
-RUN mix deps.get
-RUN mix compile
-RUN mix phoenix.digest
+#RUN mix deps.get
+#RUN mix compile
+#RUN mix phoenix.digest
 
 COPY ./docker-entrypoint.sh /
 RUN chmod +x /docker-entrypoint.sh
